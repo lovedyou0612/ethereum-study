@@ -32,7 +32,7 @@
 const { expect } = require("chai");
 
 let counter;
-let owner;
+let owner, otherAccount;
 
 describe("Counter", function () {
   async function init() {
