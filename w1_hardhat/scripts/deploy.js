@@ -12,7 +12,7 @@ require('hardhat-abi-exporter');
 
 async function main() {
   const Counter = await ethers.getContractFactory("Counter");
-  const counter = await Counter.deploy();
+  const counter = await Counter.deploy(0);
   
   await counter.deployed();
   console.log("Counter deployed to:", counter.address);
